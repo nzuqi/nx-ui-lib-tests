@@ -15,13 +15,13 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome nx-ui-lib-tests'
+      'Welcome app1'
     );
   });
 
-  it(`should have as title 'nx-ui-lib-tests'`, () => {
+  it(`should have as title 'app1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('nx-ui-lib-tests');
+    expect(app.title).toEqual('app1');
   });
 });

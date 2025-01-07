@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('nx-ui-lib-tests-e2e', () => {
+describe('app1-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {

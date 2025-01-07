@@ -432,7 +432,7 @@ import { CommonModule } from '@angular/common';
         <div id="welcome">
           <h1>
             <span> Hello there, </span>
-            Welcome nx-ui-lib-tests 👋
+            Welcome app1 👋
           </h1>
         </div>
         <!--  HERO  -->
@@ -798,7 +798,7 @@ nx run-many -t build test lint</pre>
               </svg>
               View project details
             </summary>
-            <pre>nx show project nx-ui-lib-tests</pre>
+            <pre>nx show project app1</pre>
           </details>
 
           <details>
@@ -866,4 +866,4 @@ nx g &#64;nx/angular:component ui/src/lib/button</pre>
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
-export class NxWelcomeComponent {}
+export class NxWelcomeComponent { }

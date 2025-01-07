@@ -1,8 +1,8 @@
 export default {
-  displayName: 'nx-ui-lib-tests',
+  displayName: 'app1',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/nx-ui-lib-tests',
+  coverageDirectory: '../../coverage/apps/app1',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

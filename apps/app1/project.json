@@ -1,28 +1,28 @@
 {
-  "name": "nx-ui-lib-tests",
+  "name": "app1",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/nx-ui-lib-tests/src",
+  "sourceRoot": "apps/app1/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/nx-ui-lib-tests",
-        "index": "apps/nx-ui-lib-tests/src/index.html",
-        "browser": "apps/nx-ui-lib-tests/src/main.ts",
+        "outputPath": "dist/apps/app1",
+        "index": "apps/app1/src/index.html",
+        "browser": "apps/app1/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/nx-ui-lib-tests/tsconfig.app.json",
+        "tsConfig": "apps/app1/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/nx-ui-lib-tests/public"
+            "input": "apps/app1/public"
           }
         ],
-        "styles": ["apps/nx-ui-lib-tests/src/styles.scss"],
+        "styles": ["apps/app1/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -53,10 +53,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nx-ui-lib-tests:build:production"
+          "buildTarget": "app1:build:production"
         },
         "development": {
-          "buildTarget": "nx-ui-lib-tests:build:development"
+          "buildTarget": "app1:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "nx-ui-lib-tests:build"
+        "buildTarget": "app1:build"
       }
     },
     "lint": {
@@ -74,15 +74,15 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/nx-ui-lib-tests/jest.config.ts"
+        "jestConfig": "apps/app1/jest.config.ts"
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "nx-ui-lib-tests:build",
+        "buildTarget": "app1:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/nx-ui-lib-tests/browser",
+        "staticFilePath": "dist/apps/app1/browser",
         "spa": true
       }
     }
