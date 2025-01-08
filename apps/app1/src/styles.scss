@@ -120,19 +120,19 @@ html {
                             display: flex;
                             font-weight: 400;
                             padding: 0.5rem 1rem;
+                            font-weight: 500;
                             cursor: pointer;
                             transition: all 0.3s ease;
 
                             &:hover {
-                                color: rgb(37, 87, 152);
                                 background-color: rgba(241, 241, 241, 1);
+                                // color: rgb(21, 50, 88);
                                 transition: all 0.3s ease;
                             }
 
                             &.active {
                                 background-color: rgba(241, 241, 241, 0.8);
-                                color: rgb(21, 50, 88);
-                                font-weight: bold;
+                                color: rgb(37, 87, 152);
                                 transition: all 0.3s ease;
                             }
                         }

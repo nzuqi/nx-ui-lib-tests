@@ -8,5 +8,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'app1';
+  menus = [
+    { component: 'intro', label: 'Introduction', },
+    { component: 'button', label: 'Button', },
+    { component: 'card', label: 'Card', },
+  ];
 }

@@ -7,14 +7,14 @@
         <div class="content">
             <div class="sidebar">
                 <ul>
-                    <li class="active">Button</li>
-                    <li>Card</li>
+                    @for (menu of menus; track $index) {
+                    <li routerLink="ui/{{menu.component}}" routerLinkActive="active">{{menu.label}}</li>
+                    }
                 </ul>
             </div>
             <div class="details">
-                <p>Blah!</p>
+                <router-outlet></router-outlet>
             </div>
         </div>
     </div>
 </div>
-<router-outlet></router-outlet>
