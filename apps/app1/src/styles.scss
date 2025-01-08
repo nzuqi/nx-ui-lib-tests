@@ -142,6 +142,11 @@ html {
                 .details {
                     padding: 20px;
                     flex: 1;
+
+                    h3,
+                    p {
+                        margin: 0 0 10px 0;
+                    }
                 }
             }
         }

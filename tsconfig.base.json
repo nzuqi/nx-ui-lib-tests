@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-ui-lib-tests/ui-components": ["libs/ui-components/src/index.ts"]
+      "@nx-ui-lib-tests/components": ["libs/ui-components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,1 +1,14 @@
-<p>details works!</p>
+@switch (currentRoute()) {
+@case ('button') {
+<lib-button></lib-button>
+}
+@case ('card') {
+<lib-card></lib-card>
+}
+@default {
+<h3>Introduction</h3>
+<p>Intro text goes here lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum ut exercitationem eius
+    neque id, labore non
+    unde illo in hic quo molestiae dignissimos nemo error eum magnam ipsum molestias.</p>
+}
+}
