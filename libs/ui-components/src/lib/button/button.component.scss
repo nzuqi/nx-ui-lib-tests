@@ -1,0 +1,138 @@
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    &.primary {
+        &.filled {
+            background-color: rgb(0, 121, 202);
+            color: #fff;
+
+            &:hover {
+                background-color: rgb(0, 153, 255);
+            }
+        }
+
+        &.stroked {
+            background-color: #fff;
+            border: 1px solid rgb(0, 121, 202);
+            color: rgb(0, 121, 202);
+
+            &:hover {
+                background-color: rgb(0, 121, 202);
+                color: #fff;
+            }
+        }
+
+        &.text {
+            background-color: #fff;
+            color: rgb(0, 121, 202);
+
+            &:hover {
+                background-color: #f0f0f0c4;
+                color: rgb(0, 153, 255);
+            }
+        }
+    }
+
+    &.success {
+        &.filled {
+            background-color: rgb(0, 164, 96);
+            color: #fff;
+
+            &:hover {
+                background-color: rgb(1, 193, 113);
+            }
+        }
+
+        &.stroked {
+            background-color: #fff;
+            border: 1px solid rgb(0, 164, 96);
+            color: rgb(0, 164, 96);
+
+            &:hover {
+                background-color: rgb(0, 164, 96);
+                color: #fff;
+            }
+        }
+
+        &.text {
+            background-color: #fff;
+            color: rgb(0, 164, 96);
+
+            &:hover {
+                background-color: #f0f0f0c4;
+                color: rgb(1, 193, 113);
+            }
+        }
+    }
+
+    &.warning {
+        &.filled {
+            background-color: rgb(233, 175, 0);
+            color: #333;
+
+            &:hover {
+                background-color: rgb(255, 191, 0);
+            }
+        }
+
+        &.stroked {
+            background-color: #fff;
+            border: 1px solid rgb(233, 175, 0);
+            color: rgb(233, 175, 0);
+
+            &:hover {
+                background-color: rgb(233, 175, 0);
+                color: #333;
+            }
+        }
+
+        &.text {
+            background-color: #fff;
+            color: rgb(233, 175, 0);
+
+            &:hover {
+                background-color: #f0f0f0c4;
+                color: rgb(255, 191, 0);
+            }
+        }
+    }
+
+    &.danger {
+        &.filled {
+            background-color: rgb(175, 19, 19);
+            color: #fff;
+
+            &:hover {
+                background-color: rgb(212, 28, 28);
+            }
+        }
+
+        &.stroked {
+            background-color: #fff;
+            border: 1px solid rgb(175, 19, 19);
+            color: rgb(175, 19, 19);
+
+            &:hover {
+                background-color: rgb(175, 19, 19);
+                color: #fff;
+            }
+        }
+
+        &.text {
+            background-color: #fff;
+            color: rgb(175, 19, 19);
+
+            &:hover {
+                background-color: #f0f0f0c4;
+                color: rgb(212, 28, 28);
+            }
+        }
+    }
+}

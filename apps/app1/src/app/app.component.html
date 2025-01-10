@@ -8,7 +8,10 @@
             <div class="sidebar">
                 <ul>
                     @for (menu of menus; track $index) {
-                    <li routerLink="ui/{{menu.component}}" routerLinkActive="active">{{menu.label}}</li>
+                    <li routerLink="ui/{{menu.component}}" routerLinkActive="active">
+                        <span>{{menu.label}}</span>
+                        @if (menu.wip) {<span class="wip">Unavailable</span>}
+                    </li>
                     }
                 </ul>
             </div>
